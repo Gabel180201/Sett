@@ -3,83 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="nombre de la persona o empresa que hace página">
-    <meta name="owner" content="nombre del cliente o empresa">
-    <meta name="description" content="texto breve sobre la página">
-    <meta name="keywords" lang="es" content="Las palabras claves en español playa, hotel ">
-    <meta name="keywords" content="10 palabras en ingles">
-    <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="img/Logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Pagina Sett</title>
+    <title>Responsive Navigation with Logo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="mitad1">
-            <img src="./iconos/phone-regular-24.png" alt="phone" class="phone">
-            <h2>+506 88748407</h2>
-            <img src="./iconos/whatsapp-logo-24.png" alt="WhatsApp" class="whatsApp">
-            <img src="./iconos/facebook-logo-24.png" alt="Facebook" class="facebook">
-        </div>
-        <div class="mitad2">
-            <img src="./img/Logo.jpg" alt="Navbar" class="logo">
-            <input class="menu-hamburguesa" type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-hamburguesa">
-                <img src="iconos/menu-regular-24.png" alt="Menú de hamburguesa">
-            </label>
-            <nav>
-                <a href="" class="item1">Inicio</a>
-                <a href="" class="item2">Nosotros</a>
-                <a href="" class="item3">Galería</a>
-                <a href="" class="item4">Contacto</a>
-            </nav>
-        </div>
-    </header> 
-    <section class="hero">
-        <div class="hero_container">
-            
-            <h2>Nuestra propuesta</h2>
-            <p>Servicios Eléctricos, residenciales he industriales. Construcción de cableado estructurado, servicio de mantenimiento eléctrico, preventivo y correctivo, asesoría total para los sistemas eléctricos</p>
-            <a href="tel:+50661628540;ext=123">Llamar al +506 6162 8540 ext. 123</a>
-        </div>
-    </section>
-    
-    <section class="Instalaciones_Electricas">
-        <div class="img_instaciones">
-            <img src="./img/Electrica.png" alt="Electricos" class="instalaciones">
-        </div>
-        <article class="articulo1">
-            <h2>Instalaciones Eléctricas</h2>
-            <p class="instalaciones_electricas_texto">
-                Somos una empresa que desarrolla y ejecuta
-                proyectos eléctricos en media y baja tensión. En el
-                ramo industrial, habitacional y comercial.
-                Especializados en electrificación de edificios.
-                Mantenimiento Eléctrico en general.
-                Nuestro trabajo esta fundamentado en las normas
-                del CEN.
-            </p>
-        </article>
-        
-    </section>
+    <nav>
+        <a href="#" class="logo"><img src="./img/Logo.jpg" alt="Logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="servicios">
-        <div class="servicio">
-            <img src="./img/Electricos.png" alt="Electricos" class="imagen_servicios">
-            <h2>Eléctricos</h2>
-        </div>
-        <div class="servicio">
-            <img src="./img/telefonia.png" alt="Telefonía" class="imagen_servicios">
-            <h2>Telefonía</h2>
-        </div>
-        <div class="servicio">
-            <img src="./img/Cableado.png" alt="Cableado" class="imagen_servicios">
-            <h2>Cableado Estructurado</h2>
-        </div>
-        <div class="servicio">
-            <img src="./img/rotulos.png" alt="Rotulos" class="imagen_servicios">
-            <h2>Mantenimiento de Rótulos</h2>
-        </div>
-    </section>
+    <main>
+        <h1>Welcome to our website</h1>
+        <p>This is a sample content area.</p>
+    </main>
 </body>
 </html>
