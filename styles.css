@@ -13,6 +13,10 @@ nav {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Optional: adds a subtle shadow */
 }
 
+nav li:hover {
+    background-color: aquamarine;
+}
+
 .logo {
     color: #333;  /* Changed to a dark color for contrast */
     font-size: 1.5rem;
