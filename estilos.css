@@ -43,7 +43,6 @@ header {
     background-color: whitesmoke;
     font-weight: bold;
     font-size: 1.5em;
-    margin-bottom: 1%;
     white-space: nowrap;
     display: flex;
     flex-direction: row;
