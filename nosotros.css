@@ -81,11 +81,12 @@ body {
     }
 }
 
-/* Header and Navigation styles */
+/* Header styles */
 .main-header {
-    background-color: #333;
+    background-color: white;
     padding: 1rem;
     position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-container {
@@ -109,14 +110,14 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #a9a9a9;
+    color: #555;
 }
 
 .nav-toggle {
@@ -146,7 +147,7 @@ nav a:hover {
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
         display: block;
-        background: white;
+        background: black;
         height: 2px;
         width: 2em;
         border-radius: 2px;
@@ -172,7 +173,7 @@ nav a:hover {
         position: absolute;
         top: 100%;
         left: 0;
-        background: #333;
+        background: white;
         width: 100%;
         transform: scale(1, 0);
         transform-origin: top;
@@ -221,10 +222,11 @@ nav a:hover {
 
 /* Footer styles */
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 20px 0;
-    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .footer-content {
@@ -233,22 +235,21 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
     margin-bottom: 15px;
 }
 
 .social-icon {
+    display: inline-block;
     margin: 0 10px;
 }
 
 .social-icon img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0);
 }
 
 .privacy-policy {
@@ -257,7 +258,7 @@ nav a:hover {
 }
 
 .privacy-policy a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
