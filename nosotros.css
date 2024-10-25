@@ -92,32 +92,20 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.logo img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 1rem;
-}
-
-nav {
-    width: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: center;
 }
 
 nav li {
-    margin: 0.5em 1em;
+    margin: 0 1em;
 }
 
 nav a {
@@ -140,38 +128,95 @@ nav a:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-    nav {
-        position: absolute;
-        background: #333;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        transform: scale(1, 0);
-        transform-origin: top;
-        transition: transform 400ms ease-in-out;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-
-    nav a {
-        opacity: 0;
-        transition: opacity 150ms ease-in-out;
+@media screen and (max-width: 1024px) {
+    .header-container {
+        justify-content: flex-end;
     }
 
     .nav-toggle-label {
         display: flex;
         align-items: center;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 2;
     }
 
-    .nav-toggle-label span
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+        text-align: center;
+    }
+
+    nav a {
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    .nav-toggle:checked ~ nav {
+        transform: scale(1, 1);
+    }
+
+    .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out 0.15s;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
 }
 
 /* Footer styles */
