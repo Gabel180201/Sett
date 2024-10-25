@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nosotros_container {
+    max-width: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 40px 20px;
+    background-image: url(img/trabajadores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .nosotros_container {
+        padding: 30px 15px;
+        height: 80vh;
+    }
+
+    .title {
+        font-size: 3rem; /* Increased from 2.5rem */
+    }
+
+    .text {
+        font-size: 1.4rem; /* Increased from 1.2rem */
+        line-height: 1.8; /* Slightly increased for better readability */
+        padding: 25px; /* Increased from 20px for more space around text */
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .nosotros_container {
+        padding: 20px 10px;
+        height: 90vh;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 15px;
+    }
+}
+
+/* Header and Navigation styles */
+.main-header {
+    background-color: #333;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0.5em 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #a9a9a9;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: absolute;
+        background: #333;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-toggle-label span
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.privacy-policy {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.privacy-policy a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 15px;
+    }
+
+    .privacy-policy {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .social-icon {
+        margin: 0 8px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .privacy-policy {
+        font-size: 0.7rem;
+    }
+}
+
+/* iPad Air (portrait) */
+@media only screen 
+and (min-device-width: 820px) 
+and (max-device-width: 1180px) 
+and (orientation: portrait) {
+    .nosotros_container {
+        padding: 40px 30px;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        padding: 30px;
+        max-width: 90%;
+    }
+}
+
+/* iPad Pro (portrait) */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: portrait) {
+    .nosotros_container {
+        padding: 50px 40px;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        font-size: 1.8rem;
+        line-height: 1.9;
+        padding: 35px;
+        max-width: 80%;
+    }
+}
+
+/* iPad Air and iPad Pro (landscape) */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape) {
+    .nosotros_container {
+        padding: 40px 50px;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        padding: 30px;
+        max-width: 70%;
+    }
+}
