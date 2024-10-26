@@ -43,9 +43,7 @@
     cursor: pointer;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span {
     display: block;
     background: #333;
     height: 2px;
@@ -58,14 +56,19 @@
 .nav-toggle-label span::after {
     content: '';
     position: absolute;
+    display: block;
+    background: #333;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
 }
 
 .nav-toggle-label span::before {
-    bottom: 7px;
+    top: -7px;
 }
 
 .nav-toggle-label span::after {
-    top: 7px;
+    bottom: -7px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -149,4 +152,35 @@
     .gallery-title {
         font-size: 2rem;
     }
+}
+
+footer {
+    background-color: #333; /* Dark gray background */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Center align all text content */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align flex items */
+    justify-content: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
 }

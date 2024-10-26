@@ -10,7 +10,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 40px 20px;
-    background-image: url(img/trabajadores.jpg);
+    background-image: url(../img/trabajadores.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
